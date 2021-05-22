@@ -5,8 +5,10 @@ import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import androidx.viewpager2.widget.ViewPager2
 import com.example.gagagagaandroid.R
+import com.example.gagagagaandroid.adapter.HomeListAdapter
 import com.example.gagagagaandroid.adapter.MainViewPagerAdapter
 import com.example.gagagagaandroid.databinding.ActivityMainBinding
+import com.example.gagagagaandroid.ui.homefragment.HomeFragment
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -23,6 +25,10 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+//        val homeListFragment = HomeFragment()
+//        val transaction = supportFragmentManager.beginTransaction()
+//        transaction.add(R.id.homeList_container, homeListFragment)
+//        transaction.commit()
     }
 
     private fun setViewPagerAdapter() {

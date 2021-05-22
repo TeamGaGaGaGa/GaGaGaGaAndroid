@@ -3,9 +3,9 @@ package com.example.gagagagaandroid.adapter
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.gagagagaandroid.ui.SecondFragment
 import com.example.gagagagaandroid.ui.ThirdFragment
 import com.example.gagagagaandroid.ui.first.FirstFragment
+import com.example.gagagagaandroid.ui.homefragment.HomeFragment
 
 class MainViewPagerAdapter(fragmentActivity: FragmentActivity) :
     FragmentStateAdapter(fragmentActivity) {
@@ -14,7 +14,7 @@ class MainViewPagerAdapter(fragmentActivity: FragmentActivity) :
     override fun createFragment(position: Int): Fragment {
         return when (position) {
             0 -> FirstFragment()
-            1 -> SecondFragment()
+            1 -> HomeFragment()
             else -> ThirdFragment()
         }
     }
