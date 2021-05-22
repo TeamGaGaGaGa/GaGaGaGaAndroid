@@ -20,8 +20,8 @@ class ListAdapter(
             binding.name.text = list.name
             binding.description.text = list.description
             binding.tag1.text = list.tags[0]
-            binding.tag2.text = list.tags[0]
-            binding.tag3.text = list.tags[0]
+            binding.tag2.text = list.tags[1]
+            binding.tag3.text = list.tags[2]
             binding.root.setOnClickListener { itemClick.onClick() }
         }
     }
