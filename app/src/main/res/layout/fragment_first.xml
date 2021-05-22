@@ -407,7 +407,7 @@
                     android:layout_marginTop="10dp"
                     android:background="@drawable/line_border"
                     android:fontFamily="@font/spoqahansansneo_regular"
-                    android:text="일찍 일어나는 새가 더 배부른 법이지! 나는 낮코"
+                    android:text="체크셔츠는 그냥 체크셔츠일 뿐. 오해하지 말자.!"
                     android:textColor="@color/white"
                     android:textSize="11sp"
                     app:layout_constraintEnd_toEndOf="parent"

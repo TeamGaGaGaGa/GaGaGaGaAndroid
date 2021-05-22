@@ -168,6 +168,7 @@ class FirstFragment : Fragment() {
                 ) {
                     if (response.body()?.success == true) {
                         Log.d("test", "성공")
+                        Toast.makeText(requireContext(), response.body()?.message, Toast.LENGTH_SHORT).show()
                     }
                 }
 
