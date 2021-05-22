@@ -18,3 +18,67 @@
 - 홈뷰
 - 결과뷰
   - 등록뷰에서 완료가 되면 결과화면을 보여줌
+
+## 서버코드 연결
+### SoptServiceCreator
+``` kotlin
+object ServiceCreator {
+    private const val BASE_URL = "http://54.180.159.90:5000/"
+
+    private val retrofit: Retrofit = Retrofit.Builder()
+        .baseUrl(BASE_URL)
+        .addConverterFactory(GsonConverterFactory.create())
+        .build()
+
+    val soptService: SoptService = retrofit.create(SoptService::class.java)
+}
+```
+
+### SoptService
+``` kotlin
+interface SoptService {
+    @POST("friends")
+    fun postAddFriend(
+        @Body body: RequestFriendData
+    ): Call<ResponseFriendData>
+}
+```
+서버 연결을 위한 인터페이스 구현
+
+### Callback
+``` kotlin
+            val requestFriendData = RequestFriendData(
+                name = name,
+                part = part,
+                mbti = mbti,
+                image = image,
+                place = place,
+                face = face,
+                banmo = talkMode,
+                answer1 = question1,
+                answer2 = question2,
+                ybob = soptYear,
+                tmi = tmi
+
+            )
+
+            val call = ServiceCreator.soptService.postAddFriend(requestFriendData)
+            call.enqueue(object : retrofit2.Callback<ResponseFriendData> {
+                override fun onResponse(
+                    call: Call<ResponseFriendData>,
+                    response: Response<ResponseFriendData>
+                ) {
+                    if (response.body()?.success == true) {
+                        Log.d("test", "성공")
+                        Toast.makeText(requireContext(), response.body()?.message, Toast.LENGTH_SHORT).show()
+                    }
+                }
+
+                override fun onFailure(call: Call<ResponseFriendData>, t: Throwable) {
+                    t.printStackTrace()
+                    Log.d("test", "실패")
+                }
+
+            })
+```
+서버연결 성공 시 Toast메시지 
