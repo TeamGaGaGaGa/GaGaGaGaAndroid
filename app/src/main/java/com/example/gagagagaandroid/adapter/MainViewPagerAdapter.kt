@@ -6,6 +6,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.gagagagaandroid.ui.home.HomeFragment
 import com.example.gagagagaandroid.ui.list.ListFragment
 import com.example.gagagagaandroid.ui.first.FirstFragment
+import com.example.gagagagaandroid.ui.homefragment.HomeFragment
 
 class MainViewPagerAdapter(fragmentActivity: FragmentActivity) :
     FragmentStateAdapter(fragmentActivity) {

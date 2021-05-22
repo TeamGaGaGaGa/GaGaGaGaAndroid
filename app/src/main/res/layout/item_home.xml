@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="60dp"
+    android:background="@drawable/background_item_home"
+    android:backgroundTint="#5BEFA2"
+    android:paddingEnd="14dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/spoqahansansneo_regular"
+        android:text="김솝트"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/completeResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/spoqahansansneo_bold"
+        android:text="홍대에서 만난 \n너구리"
+        android:textColor="@color/black"
+        android:textSize="38sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tag1"
+        style="@style/homeTagStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="34dp"
+        android:fontFamily="@font/spoqahansansneo_regular"
+        android:text="#tag1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/completeResult"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tag2"
+        style="@style/homeTagStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/spoqahansansneo_regular"
+        android:text="#tag2"
+        app:layout_constraintLeft_toRightOf="@id/tag1"
+        app:layout_constraintTop_toBottomOf="@+id/completeResult" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tag3"
+        style="@style/homeTagStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="34dp"
+        android:fontFamily="@font/spoqahansansneo_regular"
+        android:text="#tag3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tag2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
