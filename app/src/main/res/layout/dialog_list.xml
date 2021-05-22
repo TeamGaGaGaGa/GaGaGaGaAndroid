@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="#5BEFA2">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_img"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="19dp"
+        android:src="@drawable/asset_2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/spoqahansansneo_bold"
+        android:text="김솝트"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@id/profile_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/spoqahansansneo_regular"
+        android:paddingBottom="19dp"
+        android:text="홍대에서 만난 너구리"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/name"
+        app:layout_constraintTop_toBottomOf="@id/name" />
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/frame_9"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/spoqahansansneo_bold"
+            android:text="# 디자인 # OB # enfp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/container" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/spoqahansansneo_bold"
+            android:text="반말모드"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="@id/text1"
+            app:layout_constraintTop_toBottomOf="@id/text1" />
+
+        <TextView
+            android:id="@+id/content1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:fontFamily="@font/spoqahansansneo_regular"
+            android:text="우리는 반모 ON!"
+            android:textColor="#4b4b4b"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@id/text2"
+            app:layout_constraintTop_toTopOf="@id/text2" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/spoqahansansneo_bold"
+            android:text="첫만남 위치"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="@id/text2"
+            app:layout_constraintTop_toBottomOf="@id/text2" />
+
+        <TextView
+            android:id="@+id/content2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/spoqahansansneo_regular"
+            android:text="인싸의 동네 홍대"
+            android:textColor="#4b4b4b"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/content1"
+            app:layout_constraintTop_toTopOf="@id/text3" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/spoqahansansneo_bold"
+            android:text="닮은 꼴"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="@id/text3"
+            app:layout_constraintTop_toBottomOf="@id/text3" />
+
+        <TextView
+            android:id="@+id/content3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/spoqahansansneo_regular"
+            android:text="솝트의 유재석"
+            android:textColor="#4b4b4b"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/content2"
+            app:layout_constraintTop_toTopOf="@id/text4" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="260dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="#EDEDED"
+            app:layout_constraintLeft_toLeftOf="@id/text4"
+            app:layout_constraintTop_toBottomOf="@id/text4" />
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/spoqahansansneo_bold"
+            android:text="PM 준비생~?"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="@id/divider"
+            app:layout_constraintTop_toBottomOf="@id/divider" />
+
+        <TextView
+            android:id="@+id/content4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/spoqahansansneo_regular"
+            android:text="이번 PM은 나야!"
+            android:textColor="#4b4b4b"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/content3"
+            app:layout_constraintTop_toTopOf="@id/text5" />
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/spoqahansansneo_bold"
+            android:layout_marginTop="10dp"
+            android:text="계획적일까?"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="@id/text5"
+            app:layout_constraintTop_toBottomOf="@id/text5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="계획을 해야 기획을 하지."
+            android:textColor="#4b4b4b"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/content4"
+            app:layout_constraintTop_toTopOf="@id/text6" />
+
+        <TextView
+            android:id="@+id/text7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/spoqahansansneo_bold"
+            android:layout_marginTop="10dp"
+            android:text="이 사람의 TMI"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="@id/text6"
+            app:layout_constraintTop_toBottomOf="@id/text6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이 친구는 말이 많다!"
+            android:textColor="#4b4b4b"
+            android:textSize="14sp"
+            android:layout_marginBottom="33dp"
+            app:layout_constraintLeft_toLeftOf="@id/content4"
+            app:layout_constraintTop_toTopOf="@id/text7"
+            app:layout_constraintBottom_toBottomOf="@id/container"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
