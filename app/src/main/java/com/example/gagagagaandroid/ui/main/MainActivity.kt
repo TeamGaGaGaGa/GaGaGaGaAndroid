@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
         binding.vpMain.apply {
             adapter = viewPagerAdapter
             registerOnPageChangeCallback(PageChangeCallBack())
+            isUserInputEnabled = false
         }
     }
 

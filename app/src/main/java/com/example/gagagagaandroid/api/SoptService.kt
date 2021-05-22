@@ -12,6 +12,11 @@ interface SoptService {
         @Body body: RequestFriendData
     ): Call<ResponseFriendData>
 
-    @GET("friends/:{id}")
-    fun postFriendLookUp(@Path("id") id: String): Call<ResponseFriendLookData>
+//    @GET("friends/:{id}")
+//    fun postFriendLookUp(@Path("id") id: String): Call<ResponseFriendLookData>
+
+//    @GET("friends")
+//    fun getProfile(
+//
+//    ) : Call<ResponseListData>
 }

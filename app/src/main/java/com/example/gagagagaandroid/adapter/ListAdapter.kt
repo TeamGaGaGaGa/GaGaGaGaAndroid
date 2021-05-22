@@ -16,7 +16,7 @@ class ListAdapter(
     inner class ListViewHolder(private val binding: ListItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun onBind(list: ListData) {
-            Glide.with(binding.root).load(list.image).into(binding.profileImg)
+            //Glide.with(binding.root).load(list.image).into(binding.profileImg)
             binding.name.text = list.name
             binding.description.text = list.description
             binding.tag1.text = list.tags[0]
