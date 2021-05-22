@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">GaGaGaGaAndroid</string>
+
+    <!--HomeFragment-->
+    <string name="home_title">첫인상을 웅앵</string>
+    <string name="home_description">첫인상을 웅앵</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
