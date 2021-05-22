@@ -13,8 +13,8 @@ class MainViewPagerAdapter(fragmentActivity: FragmentActivity) :
 
     override fun createFragment(position: Int): Fragment {
         return when (position) {
-            0 -> FirstFragment()
-            1 -> HomeFragment()
+            0 -> HomeFragment()
+            1 -> FirstFragment()
             else -> ListFragment()
         }
     }
