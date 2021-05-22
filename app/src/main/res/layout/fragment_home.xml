@@ -60,5 +60,3 @@
         tools:listitem="@layout/item_home" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-

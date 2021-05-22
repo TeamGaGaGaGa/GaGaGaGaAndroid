@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="28dp"
+    android:background="@drawable/background_list_item">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_img"
+        android:layout_width="45dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="#c4c4c4" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/spoqahansansneo_bold"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/profile_img"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="김솝트" />
+
+    <TextView
+        android:id="@+id/tag1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/background_list_item_tag"
+        android:fontFamily="@font/spoqahansansneo_regular"
+        android:textColor="#969696"
+        android:textSize="9sp"
+        app:layout_constraintLeft_toLeftOf="@id/name"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        tools:text="#디자인" />
+
+    <TextView
+        android:id="@+id/tag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/background_list_item_tag"
+        android:fontFamily="@font/spoqahansansneo_regular"
+        android:textColor="#969696"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@id/tag1"
+        app:layout_constraintLeft_toRightOf="@id/tag1"
+        app:layout_constraintTop_toTopOf="@id/tag1"
+        tools:text="#enfp" />
+
+    <TextView
+        android:id="@+id/tag3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/background_list_item_tag"
+        android:fontFamily="@font/spoqahansansneo_regular"
+        android:textColor="#969696"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@id/tag2"
+        app:layout_constraintLeft_toRightOf="@id/tag2"
+        app:layout_constraintTop_toTopOf="@id/tag2"
+        tools:text="디자인" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/spoqahansansneo_regular"
+        android:background="@drawable/background_list_description"
+        android:gravity="center"
+        android:paddingVertical="6dp"
+        android:text="홍대에서 만난 너구리"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/tag1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
