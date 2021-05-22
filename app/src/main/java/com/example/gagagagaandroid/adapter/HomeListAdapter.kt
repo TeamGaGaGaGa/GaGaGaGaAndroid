@@ -28,10 +28,10 @@ class HomeListAdapter: RecyclerView.Adapter<HomeListAdapter.HomeListViewHolder>(
     ) : RecyclerView.ViewHolder(binding.root) {
         fun onBind(homeListData: HomeListData) {
             binding.name.text = homeListData.name
-            binding.completeResult.text = "{homeListData.place}에서 만난 {homeListData.face}"
-            binding.tag1.text = homeListData.part
-            binding.tag2.text = homeListData.mbti
-            binding.tag3.text = homeListData.ybob
+            binding.completeResult.text = homeListData.place+"에서 \n"+ homeListData.face
+            binding.tag1.text = "#"+homeListData.part
+            binding.tag2.text = "#"+homeListData.mbti
+            binding.tag3.text = "#"+homeListData.ybob
         }
     }
 }
