@@ -31,9 +31,10 @@
         <item name="android:scrollbarAlwaysDrawHorizontalTrack">true</item>
         <item name="android:scrollbars">horizontal</item>
         <item name="android:fadeScrollbars">false</item>
-        <item name="android:scrollbarThumbHorizontal">"#656565"</item>
-        <item name="android:scrollbarTrackHorizontal">"ffffff"</item>
+        <item name="android:scrollbarThumbHorizontal">@color/thumb</item>
+        <item name="android:scrollbarTrackHorizontal">@color/track</item>
         <item name="android:scrollbarSize">4dp</item>
+    </style>
 
     <style name="ImageButton">
         <item name="android:background">@android:color/transparent</item>

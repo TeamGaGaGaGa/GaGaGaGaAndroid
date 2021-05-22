@@ -3,7 +3,6 @@ package com.example.gagagagaandroid.adapter
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.gagagagaandroid.ui.home.HomeFragment
 import com.example.gagagagaandroid.ui.list.ListFragment
 import com.example.gagagagaandroid.ui.first.FirstFragment
 import com.example.gagagagaandroid.ui.homefragment.HomeFragment

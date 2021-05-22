@@ -11,4 +11,6 @@
     <color name="gray">#5F5F5F</color>
     <color name="home_tag_stroke">#DFDFDF</color>
     <color name="transparent">#00FFFFFF</color>
+    <color name="thumb">#656565</color>
+    <color name="track">#FFFFFF</color>
 </resources>
