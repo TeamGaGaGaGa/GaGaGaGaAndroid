@@ -1,6 +1,9 @@
 # 서비스 이름 : 갸가갸가
 > 서비스 한 줄 설명 : 솝트인들의 첫인상을 기록하고 기억할 수 있는 서비스
 
+## 구현 영상
+<img width="360" src="https://user-images.githubusercontent.com/72112845/119242972-9d678980-bb9d-11eb-8294-80ed9fe30f7f.gif"/>
+
 ## 기능 및 개발 담당 부분
 ### 김희빈
 - 메인뷰
@@ -41,6 +44,14 @@ interface SoptService {
     fun postAddFriend(
         @Body body: RequestFriendData
     ): Call<ResponseFriendData>
+    
+    @GET("friends/:{id}")
+    fun postFriendLookUp(@Path("id") id: String): Call<ResponseFriendLookData>
+
+    @GET("friends")
+    fun getProfile(
+
+    ) : Call<ResponseListData>
 }
 ```
 서버 연결을 위한 인터페이스 구현
