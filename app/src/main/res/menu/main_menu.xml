@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/item1"
-        android:icon="@drawable/ic_baseline_home_24"
-        android:title="item1" />
+        android:id="@+id/add"
+        android:icon="@drawable/vector_add"
+        android:title="추가" />
 
     <item
-        android:id="@+id/item2"
-        android:icon="@drawable/ic_add_to_photos"
-        android:title="item1" />
+        android:id="@+id/home"
+        android:icon="@drawable/vector_home"
+        android:title="홈" />
 
     <item
-        android:id="@+id/item3"
-        android:icon="@drawable/ic_baseline_format_list_bulleted_24"
-        android:title="item1" />
+        android:id="@+id/list"
+        android:icon="@drawable/vector_list"
+        android:title="리스트" />
 </menu>
