@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
     tools:context=".ui.first.FirstFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -13,7 +12,7 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:progressTint="@color/purple_500"
+        android:progressTint="@color/main_green"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
@@ -166,7 +165,7 @@
                 android:layout_width="300dp"
                 android:layout_height="45dp"
                 android:layout_marginTop="5dp"
-                android:backgroundTint="@color/gray"
+                android:backgroundTint="@color/main_black"
                 android:fontFamily="@font/spoqahansansneo_regular"
                 android:hint="상대방의 이름을 입력해주세요."
                 android:textColor="@color/white"
@@ -329,7 +328,7 @@
                 android:layout_width="300dp"
                 android:layout_height="45dp"
                 android:layout_marginTop="5dp"
-                android:backgroundTint="@color/gray"
+                android:backgroundTint="@color/main_black"
                 android:hint="상대방의 MBTI를 입력해주세요."
                 android:textColor="@color/white"
                 android:textColorHint="@color/white"
@@ -486,11 +485,11 @@
                     android:layout_width="300dp"
                     android:layout_height="45dp"
                     android:layout_marginTop="5dp"
-                    android:backgroundTint="@color/green"
+                    android:backgroundTint="@color/main_green"
                     android:fontFamily="@font/spoqahansansneo_regular"
                     android:hint="솝트의 ㅇㅇㅇ"
                     android:textColor="@color/white"
-                    android:textColorHint="@color/gray"
+                    android:textColorHint="@color/main_black"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -513,11 +512,11 @@
                     android:layout_width="300dp"
                     android:layout_height="45dp"
                     android:layout_marginTop="5dp"
-                    android:backgroundTint="@color/green"
+                    android:backgroundTint="@color/main_green"
                     android:fontFamily="@font/spoqahansansneo_regular"
                     android:hint="홍대 1차 세미나에서 만났어요."
                     android:textColor="@color/white"
-                    android:textColorHint="@color/gray"
+                    android:textColorHint="@color/main_black"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
