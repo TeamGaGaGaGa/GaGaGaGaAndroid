@@ -137,16 +137,6 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <!--            <TextView-->
-            <!--                android:id="@+id/scroll_content"-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:text="\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"-->
-            <!--                app:layout_constraintTop_toBottomOf="@id/cl_profile_image"-->
-            <!--                app:layout_constraintStart_toStartOf="parent"-->
-
-            <!--                />-->
-
             <TextView
                 android:id="@+id/tv_name"
                 android:layout_width="wrap_content"
@@ -283,41 +273,43 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/btn_android" />
 
-            <!--            <com.google.android.material.chip.ChipGroup-->
-            <!--                android:id="@+id/chip_group_yb_ob"-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                app:layout_constraintTop_toBottomOf="@id/tv_sopt_year"-->
-            <!--                android:layout_marginStart="30dp"-->
-            <!--                app:singleSelection="true"-->
-            <!--                app:layout_constraintStart_toStartOf="parent" >-->
+<!--            <com.google.android.material.chip.ChipGroup-->
+<!--                android:id="@+id/chip_group_yb_ob"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="30dp"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/tv_sopt_year"-->
+<!--                app:chipSpacingHorizontal="3dp"-->
+<!--                app:singleSelection="true">-->
 
+<!--                <com.google.android.material.chip.Chip-->
+<!--                    android:id="@+id/chip_yb"-->
+<!--                    style="@style/Widget.MaterialComponents.Chip.Choice"-->
+<!--                    android:layout_width="70dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:text="YB"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="12sp"-->
+<!--                    app:chipBackgroundColor="@color/btn_chip_state_list"-->
+<!--                    app:chipStrokeColor="@color/main_green"-->
+<!--                    app:chipStrokeWidth="2dp" />-->
 
-            <!--                <com.google.android.material.chip.Chip-->
-            <!--                    style="@style/Widget.MaterialComponents.Chip.Choice"-->
-            <!--                    android:layout_width="70dp"-->
-            <!--                    android:layout_height="50dp"-->
-            <!--                    android:text="YB"-->
-            <!--                    android:gravity="center"-->
-            <!--                    android:textColor="@color/white"-->
-            <!--                    app:chipStrokeColor="@color/main_green"-->
-            <!--                    app:chipBackgroundColor="@color/btn_chip_state_list"-->
-            <!--                    app:chipStrokeWidth="2dp"-->
-            <!--                    android:textSize="12sp" />-->
+<!--                <com.google.android.material.chip.Chip-->
+<!--                    android:id="@+id/chip_ob"-->
+<!--                    style="@style/Widget.MaterialComponents.Chip.Choice"-->
+<!--                    android:layout_width="70dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:text="OB"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="12sp"-->
+<!--                    app:chipBackgroundColor="@color/btn_chip_state_list"-->
+<!--                    app:chipStrokeColor="@color/main_green"-->
+<!--                    app:chipStrokeWidth="2dp" />-->
 
-            <!--                <com.google.android.material.chip.Chip-->
-            <!--                    style="@style/Widget.MaterialComponents.Chip.Choice"-->
-            <!--                    android:layout_width="70dp"-->
-            <!--                    android:layout_height="50dp"-->
-            <!--                    android:text="OB"-->
-            <!--                    android:gravity="center"-->
-            <!--                    android:textColor="@color/white"-->
-            <!--                    app:chipStrokeColor="@color/main_green"-->
-            <!--                    app:chipBackgroundColor="@color/btn_chip_state_list"-->
-            <!--                    app:chipStrokeWidth="2dp"-->
-            <!--                    android:textSize="12sp" />-->
-
-            <!--            </com.google.android.material.chip.ChipGroup>-->
+<!--            </com.google.android.material.chip.ChipGroup>-->
 
 
             <androidx.appcompat.widget.AppCompatButton
@@ -421,6 +413,45 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/tv_part_main_question" />
 
+<!--                <com.google.android.material.chip.ChipGroup-->
+<!--                    android:id="@+id/chip_group_part_question1"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="30dp"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/tv_part_question1"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    app:singleSelection="true">-->
+
+<!--                    <com.google.android.material.chip.Chip-->
+<!--                        android:id="@+id/chip_part_check_yes"-->
+<!--                        style="@style/Widget.MaterialComponents.Chip.Choice"-->
+<!--                        android:layout_width="300dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:text="철이 없었죠... 체크셔츠가 많으면 코딩을 잘 할 수 있을거라 생각한게.."-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="12sp"-->
+<!--                        app:chipBackgroundColor="@color/btn_chip_state_list"-->
+<!--                        app:chipStrokeColor="@color/main_green"-->
+<!--                        app:chipStrokeWidth="2dp" />-->
+
+<!--                    <com.google.android.material.chip.Chip-->
+<!--                        android:id="@+id/chip_part_check_no"-->
+<!--                        style="@style/Widget.MaterialComponents.Chip.Choice"-->
+<!--                        android:layout_width="300dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:text="체크셔츠는 그냥 체크셔츠일 뿐. 오해하지 말자.!"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="12sp"-->
+<!--                        app:chipBackgroundColor="@color/btn_chip_state_list"-->
+<!--                        app:chipStrokeColor="@color/main_green"-->
+<!--                        app:chipStrokeWidth="2dp" />-->
+
+<!--                </com.google.android.material.chip.ChipGroup>-->
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btn_part_check_yes"
                     android:layout_width="300dp"
@@ -460,6 +491,45 @@
                     android:textColor="@color/white"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/btn_part_check_no" />
+
+<!--                <com.google.android.material.chip.ChipGroup-->
+<!--                    android:id="@+id/chip_group_part_question2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="30dp"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/tv_part_question2"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    app:singleSelection="true">-->
+
+<!--                    <com.google.android.material.chip.Chip-->
+<!--                        android:id="@+id/chip_night_coding"-->
+<!--                        style="@style/Widget.MaterialComponents.Chip.Choice"-->
+<!--                        android:layout_width="300dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:text="나는 부엉부엉 부엉이 밤코"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="12sp"-->
+<!--                        app:chipBackgroundColor="@color/btn_chip_state_list"-->
+<!--                        app:chipStrokeColor="@color/main_green"-->
+<!--                        app:chipStrokeWidth="2dp" />-->
+
+<!--                    <com.google.android.material.chip.Chip-->
+<!--                        android:id="@+id/chip_coding"-->
+<!--                        style="@style/Widget.MaterialComponents.Chip.Choice"-->
+<!--                        android:layout_width="300dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:text="일찍 일어나는 새가 더 배부른 법이지! 나는 낮코"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="12sp"-->
+<!--                        app:chipBackgroundColor="@color/btn_chip_state_list"-->
+<!--                        app:chipStrokeColor="@color/main_green"-->
+<!--                        app:chipStrokeWidth="2dp" />-->
+
+<!--                </com.google.android.material.chip.ChipGroup>-->
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btn_night_coding"
@@ -569,6 +639,45 @@
                     android:textColor="@color/white"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/et_common_question2" />
+
+<!--                <com.google.android.material.chip.ChipGroup-->
+<!--                    android:id="@+id/chip_group_talk_mode"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="30dp"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/tv_common_question3"-->
+<!--                    app:chipSpacingHorizontal="3dp"-->
+<!--                    app:singleSelection="true">-->
+
+
+<!--                    <com.google.android.material.chip.Chip-->
+<!--                        android:id="@+id/chip_talk_mode_on"-->
+<!--                        style="@style/Widget.MaterialComponents.Chip.Choice"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:text="ON"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="12sp"-->
+<!--                        app:chipBackgroundColor="@color/btn_chip_state_list"-->
+<!--                        app:chipStrokeColor="@color/main_green"-->
+<!--                        app:chipStrokeWidth="2dp" />-->
+
+<!--                    <com.google.android.material.chip.Chip-->
+<!--                        android:id="@+id/chip_talk_mode_off"-->
+<!--                        style="@style/Widget.MaterialComponents.Chip.Choice"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:text="OFF"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="12sp"-->
+<!--                        app:chipBackgroundColor="@color/btn_chip_state_list"-->
+<!--                        app:chipStrokeColor="@color/main_green"-->
+<!--                        app:chipStrokeWidth="2dp" />-->
+
+<!--                </com.google.android.material.chip.ChipGroup>-->
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btn_ask_yes"
