@@ -283,6 +283,42 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/btn_android" />
 
+            <!--            <com.google.android.material.chip.ChipGroup-->
+            <!--                android:id="@+id/chip_group_yb_ob"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/tv_sopt_year"-->
+            <!--                android:layout_marginStart="30dp"-->
+            <!--                app:singleSelection="true"-->
+            <!--                app:layout_constraintStart_toStartOf="parent" >-->
+
+
+            <!--                <com.google.android.material.chip.Chip-->
+            <!--                    style="@style/Widget.MaterialComponents.Chip.Choice"-->
+            <!--                    android:layout_width="70dp"-->
+            <!--                    android:layout_height="50dp"-->
+            <!--                    android:text="YB"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:textColor="@color/white"-->
+            <!--                    app:chipStrokeColor="@color/main_green"-->
+            <!--                    app:chipBackgroundColor="@color/btn_chip_state_list"-->
+            <!--                    app:chipStrokeWidth="2dp"-->
+            <!--                    android:textSize="12sp" />-->
+
+            <!--                <com.google.android.material.chip.Chip-->
+            <!--                    style="@style/Widget.MaterialComponents.Chip.Choice"-->
+            <!--                    android:layout_width="70dp"-->
+            <!--                    android:layout_height="50dp"-->
+            <!--                    android:text="OB"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:textColor="@color/white"-->
+            <!--                    app:chipStrokeColor="@color/main_green"-->
+            <!--                    app:chipBackgroundColor="@color/btn_chip_state_list"-->
+            <!--                    app:chipStrokeWidth="2dp"-->
+            <!--                    android:textSize="12sp" />-->
+
+            <!--            </com.google.android.material.chip.ChipGroup>-->
+
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_yb"
