@@ -260,7 +260,6 @@
                 app:layout_constraintStart_toEndOf="@id/btn_server"
                 app:layout_constraintTop_toBottomOf="@id/btn_plan" />
 
-
             <TextView
                 android:id="@+id/tv_sopt_year"
                 android:layout_width="wrap_content"
@@ -273,70 +272,43 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/btn_android" />
 
-<!--            <com.google.android.material.chip.ChipGroup-->
-<!--                android:id="@+id/chip_group_yb_ob"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginStart="30dp"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toBottomOf="@id/tv_sopt_year"-->
-<!--                app:chipSpacingHorizontal="3dp"-->
-<!--                app:singleSelection="true">-->
-
-<!--                <com.google.android.material.chip.Chip-->
-<!--                    android:id="@+id/chip_yb"-->
-<!--                    style="@style/Widget.MaterialComponents.Chip.Choice"-->
-<!--                    android:layout_width="70dp"-->
-<!--                    android:layout_height="50dp"-->
-<!--                    android:textAlignment="center"-->
-<!--                    android:text="YB"-->
-<!--                    android:textColor="@color/white"-->
-<!--                    android:textSize="12sp"-->
-<!--                    app:chipBackgroundColor="@color/btn_chip_state_list"-->
-<!--                    app:chipStrokeColor="@color/main_green"-->
-<!--                    app:chipStrokeWidth="2dp" />-->
-
-<!--                <com.google.android.material.chip.Chip-->
-<!--                    android:id="@+id/chip_ob"-->
-<!--                    style="@style/Widget.MaterialComponents.Chip.Choice"-->
-<!--                    android:layout_width="70dp"-->
-<!--                    android:layout_height="50dp"-->
-<!--                    android:text="OB"-->
-<!--                    android:textAlignment="center"-->
-<!--                    android:textColor="@color/white"-->
-<!--                    android:textSize="12sp"-->
-<!--                    app:chipBackgroundColor="@color/btn_chip_state_list"-->
-<!--                    app:chipStrokeColor="@color/main_green"-->
-<!--                    app:chipStrokeWidth="2dp" />-->
-
-<!--            </com.google.android.material.chip.ChipGroup>-->
-
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_yb"
-                android:layout_width="70dp"
-                android:layout_height="40dp"
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group_yb_ob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/line_border"
-                android:text="YB"
-                android:textColor="@color/white"
-                android:textSize="11sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_sopt_year" />
+                app:layout_constraintTop_toBottomOf="@id/tv_sopt_year"
+                app:chipSpacingHorizontal="3dp"
+                app:singleSelection="true">
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_ob"
-                android:layout_width="70dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="10dp"
-                android:background="@drawable/line_border"
-                android:text="OB"
-                android:textColor="@color/white"
-                android:textSize="11sp"
-                app:layout_constraintStart_toEndOf="@id/btn_yb"
-                app:layout_constraintTop_toTopOf="@id/btn_yb" />
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_yb"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:text="YB"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:chipBackgroundColor="@color/btn_chip_state_list"
+                    app:chipStrokeColor="@color/main_green"
+                    app:chipStrokeWidth="2dp" />
 
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_ob"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:text="OB"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:chipBackgroundColor="@color/btn_chip_state_list"
+                    app:chipStrokeColor="@color/main_green"
+                    app:chipStrokeWidth="2dp" />
+
+            </com.google.android.material.chip.ChipGroup>
 
             <TextView
                 android:id="@+id/tv_mbti"
@@ -349,7 +321,7 @@
                 android:textColor="@color/white"
                 android:textSize="14sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btn_yb" />
+                app:layout_constraintTop_toBottomOf="@+id/chip_group_yb_ob" />
 
             <EditText
                 android:id="@+id/et_mbti"
@@ -364,7 +336,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_mbti" />
-
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cl_part_question"
@@ -413,72 +384,44 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/tv_part_main_question" />
 
-<!--                <com.google.android.material.chip.ChipGroup-->
-<!--                    android:id="@+id/chip_group_part_question1"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginStart="30dp"-->
-<!--                    app:layout_constraintEnd_toEndOf="parent"-->
-<!--                    app:layout_constraintStart_toStartOf="parent"-->
-<!--                    app:layout_constraintTop_toBottomOf="@id/tv_part_question1"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    app:singleSelection="true">-->
-
-<!--                    <com.google.android.material.chip.Chip-->
-<!--                        android:id="@+id/chip_part_check_yes"-->
-<!--                        style="@style/Widget.MaterialComponents.Chip.Choice"-->
-<!--                        android:layout_width="300dp"-->
-<!--                        android:layout_height="50dp"-->
-<!--                        android:textAlignment="center"-->
-<!--                        android:text="철이 없었죠... 체크셔츠가 많으면 코딩을 잘 할 수 있을거라 생각한게.."-->
-<!--                        android:textColor="@color/white"-->
-<!--                        android:textSize="12sp"-->
-<!--                        app:chipBackgroundColor="@color/btn_chip_state_list"-->
-<!--                        app:chipStrokeColor="@color/main_green"-->
-<!--                        app:chipStrokeWidth="2dp" />-->
-
-<!--                    <com.google.android.material.chip.Chip-->
-<!--                        android:id="@+id/chip_part_check_no"-->
-<!--                        style="@style/Widget.MaterialComponents.Chip.Choice"-->
-<!--                        android:layout_width="300dp"-->
-<!--                        android:layout_height="50dp"-->
-<!--                        android:textAlignment="center"-->
-<!--                        android:text="체크셔츠는 그냥 체크셔츠일 뿐. 오해하지 말자.!"-->
-<!--                        android:textColor="@color/white"-->
-<!--                        android:textSize="12sp"-->
-<!--                        app:chipBackgroundColor="@color/btn_chip_state_list"-->
-<!--                        app:chipStrokeColor="@color/main_green"-->
-<!--                        app:chipStrokeWidth="2dp" />-->
-
-<!--                </com.google.android.material.chip.ChipGroup>-->
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btn_part_check_yes"
-                    android:layout_width="300dp"
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chip_group_part_question1"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/line_border"
-                    android:fontFamily="@font/spoqahansansneo_regular"
-                    android:text="철이 없었죠... 체크셔츠가 많으면 코딩을 잘 할 수 있을거라 생각한게.."
-                    android:textColor="@color/white"
-                    android:textSize="11sp"
+                    android:layout_marginStart="30dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tv_part_question1" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btn_part_check_no"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/tv_part_question1"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/line_border"
-                    android:fontFamily="@font/spoqahansansneo_regular"
-                    android:text="체크셔츠는 그냥 체크셔츠일 뿐. 오해하지 말자.!"
-                    android:textColor="@color/white"
-                    android:textSize="11sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/btn_part_check_yes" />
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_part_check_yes"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:textAlignment="center"
+                        android:text="철이 없었죠... 체크셔츠가 많으면 코딩을 잘 할 수 있을거라 생각한게.."
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        app:chipBackgroundColor="@color/btn_chip_state_list"
+                        app:chipStrokeColor="@color/main_green"
+                        app:chipStrokeWidth="2dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_part_check_no"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:textAlignment="center"
+                        android:text="체크셔츠는 그냥 체크셔츠일 뿐. 오해하지 말자.!"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        app:chipBackgroundColor="@color/btn_chip_state_list"
+                        app:chipStrokeColor="@color/main_green"
+                        app:chipStrokeWidth="2dp" />
+
+                </com.google.android.material.chip.ChipGroup>
 
                 <TextView
                     android:id="@+id/tv_part_question2"
@@ -490,75 +433,46 @@
                     android:text="해뜨면 눈감는 개발자?!\n 이 사람은 밤코일까요, 낮코일까요?"
                     android:textColor="@color/white"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/btn_part_check_no" />
+                    app:layout_constraintTop_toBottomOf="@id/chip_group_part_question1" />
 
-<!--                <com.google.android.material.chip.ChipGroup-->
-<!--                    android:id="@+id/chip_group_part_question2"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginStart="30dp"-->
-<!--                    app:layout_constraintEnd_toEndOf="parent"-->
-<!--                    app:layout_constraintStart_toStartOf="parent"-->
-<!--                    app:layout_constraintTop_toBottomOf="@id/tv_part_question2"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    app:singleSelection="true">-->
-
-<!--                    <com.google.android.material.chip.Chip-->
-<!--                        android:id="@+id/chip_night_coding"-->
-<!--                        style="@style/Widget.MaterialComponents.Chip.Choice"-->
-<!--                        android:layout_width="300dp"-->
-<!--                        android:layout_height="50dp"-->
-<!--                        android:textAlignment="center"-->
-<!--                        android:text="나는 부엉부엉 부엉이 밤코"-->
-<!--                        android:textColor="@color/white"-->
-<!--                        android:textSize="12sp"-->
-<!--                        app:chipBackgroundColor="@color/btn_chip_state_list"-->
-<!--                        app:chipStrokeColor="@color/main_green"-->
-<!--                        app:chipStrokeWidth="2dp" />-->
-
-<!--                    <com.google.android.material.chip.Chip-->
-<!--                        android:id="@+id/chip_coding"-->
-<!--                        style="@style/Widget.MaterialComponents.Chip.Choice"-->
-<!--                        android:layout_width="300dp"-->
-<!--                        android:layout_height="50dp"-->
-<!--                        android:textAlignment="center"-->
-<!--                        android:text="일찍 일어나는 새가 더 배부른 법이지! 나는 낮코"-->
-<!--                        android:textColor="@color/white"-->
-<!--                        android:textSize="12sp"-->
-<!--                        app:chipBackgroundColor="@color/btn_chip_state_list"-->
-<!--                        app:chipStrokeColor="@color/main_green"-->
-<!--                        app:chipStrokeWidth="2dp" />-->
-
-<!--                </com.google.android.material.chip.ChipGroup>-->
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btn_night_coding"
-                    android:layout_width="300dp"
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chip_group_part_question2"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/line_border"
-                    android:fontFamily="@font/spoqahansansneo_regular"
-                    android:text="나는 부엉부엉 부엉이 밤코"
-                    android:textColor="@color/white"
-                    android:textSize="11sp"
+                    android:layout_marginStart="30dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tv_part_question2" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btn_coding"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/tv_part_question2"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/line_border"
-                    android:fontFamily="@font/spoqahansansneo_regular"
-                    android:text="일찍 일어나는 새가 더 배부른 법이지! 나는 낮코"
-                    android:textColor="@color/white"
-                    android:textSize="11sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/btn_night_coding" />
+                    app:singleSelection="true">
 
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_night_coding"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:textAlignment="center"
+                        android:text="나는 부엉부엉 부엉이 밤코"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        app:chipBackgroundColor="@color/btn_chip_state_list"
+                        app:chipStrokeColor="@color/main_green"
+                        app:chipStrokeWidth="2dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_coding"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:textAlignment="center"
+                        android:text="일찍 일어나는 새가 더 배부른 법이지! 나는 낮코"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        app:chipBackgroundColor="@color/btn_chip_state_list"
+                        app:chipStrokeColor="@color/main_green"
+                        app:chipStrokeWidth="2dp" />
+
+                </com.google.android.material.chip.ChipGroup>
 
                 <TextView
                     android:id="@+id/tv_common_main"
@@ -571,7 +485,7 @@
                     android:textColor="@color/white"
                     android:textSize="36sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/btn_coding" />
+                    app:layout_constraintTop_toBottomOf="@id/chip_group_part_question2" />
 
                 <TextView
                     android:id="@+id/tv_common_question1"
@@ -640,69 +554,43 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/et_common_question2" />
 
-<!--                <com.google.android.material.chip.ChipGroup-->
-<!--                    android:id="@+id/chip_group_talk_mode"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginStart="30dp"-->
-<!--                    app:layout_constraintStart_toStartOf="parent"-->
-<!--                    app:layout_constraintTop_toBottomOf="@id/tv_common_question3"-->
-<!--                    app:chipSpacingHorizontal="3dp"-->
-<!--                    app:singleSelection="true">-->
-
-
-<!--                    <com.google.android.material.chip.Chip-->
-<!--                        android:id="@+id/chip_talk_mode_on"-->
-<!--                        style="@style/Widget.MaterialComponents.Chip.Choice"-->
-<!--                        android:layout_width="70dp"-->
-<!--                        android:layout_height="50dp"-->
-<!--                        android:textAlignment="center"-->
-<!--                        android:text="ON"-->
-<!--                        android:textColor="@color/white"-->
-<!--                        android:textSize="12sp"-->
-<!--                        app:chipBackgroundColor="@color/btn_chip_state_list"-->
-<!--                        app:chipStrokeColor="@color/main_green"-->
-<!--                        app:chipStrokeWidth="2dp" />-->
-
-<!--                    <com.google.android.material.chip.Chip-->
-<!--                        android:id="@+id/chip_talk_mode_off"-->
-<!--                        style="@style/Widget.MaterialComponents.Chip.Choice"-->
-<!--                        android:layout_width="70dp"-->
-<!--                        android:layout_height="50dp"-->
-<!--                        android:textAlignment="center"-->
-<!--                        android:text="OFF"-->
-<!--                        android:textColor="@color/white"-->
-<!--                        android:textSize="12sp"-->
-<!--                        app:chipBackgroundColor="@color/btn_chip_state_list"-->
-<!--                        app:chipStrokeColor="@color/main_green"-->
-<!--                        app:chipStrokeWidth="2dp" />-->
-
-<!--                </com.google.android.material.chip.ChipGroup>-->
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btn_ask_yes"
-                    android:layout_width="wrap_content"
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chip_group_talk_mode"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/line_border"
-                    android:fontFamily="@font/spoqahansansneo_regular"
-                    android:text="ON"
-                    android:textColor="@color/white"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tv_common_question3" />
+                    app:layout_constraintTop_toBottomOf="@id/tv_common_question3"
+                    app:chipSpacingHorizontal="3dp"
+                    app:singleSelection="true">
 
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btn_ask_no"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:background="@drawable/line_border"
-                    android:fontFamily="@font/spoqahansansneo_regular"
-                    android:text="OFF"
-                    android:textColor="@color/white"
-                    app:layout_constraintStart_toEndOf="@id/btn_ask_yes"
-                    app:layout_constraintTop_toTopOf="@id/btn_ask_yes" />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_talk_mode_on"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:textAlignment="center"
+                        android:text="ON"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        app:chipBackgroundColor="@color/btn_chip_state_list"
+                        app:chipStrokeColor="@color/main_green"
+                        app:chipStrokeWidth="2dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_talk_mode_off"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:textAlignment="center"
+                        android:text="OFF"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        app:chipBackgroundColor="@color/btn_chip_state_list"
+                        app:chipStrokeColor="@color/main_green"
+                        app:chipStrokeWidth="2dp" />
+
+                </com.google.android.material.chip.ChipGroup>
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btn_add"
@@ -715,16 +603,9 @@
                     android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/btn_ask_no" />
-
+                    app:layout_constraintTop_toBottomOf="@id/chip_group_talk_mode" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-
-
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-
     </ScrollView>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
